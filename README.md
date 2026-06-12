@@ -13,7 +13,7 @@ Node size reflects betweenness centrality — actors who sit between otherwise d
 Full Governance Network
 🌐 Interactive Network — opens in new tab
 
-The full governance network (49 connected nodes, 158 edges) is hosted interactively at the link below. Use the dropdown to filter by actor type, search for a specific node, or hover for centrality details.
+The full governance network (105 connected nodes, 256 edges) is hosted interactively at the link below. Use the dropdown to filter by actor type, search for a specific node, or hover for centrality details.
 
 This subgraph isolates the 109 burden-generating edges in the network — relationships where one actor’s regulatory authority, compliance requirement, or administrative process imposes learning, compliance, or psychological costs on the receiving actor (Herd & Moynihan, 2019).
 
@@ -22,15 +22,16 @@ Top Brokers — Betweenness Centrality
 Betweenness centrality identifies actors whose network position mediates flows between otherwise disconnected actors. High betweenness nodes are structural brokers — their removal would disconnect parts of the governance system.
 
 Actor	Actor Type	Coalition	Betweenness	Degree (All)	Degree (In)	Degree (Out)
-South Carolina Shellfish Growers Association (SCSGA)	advocacy	pro-expansion	0.1325	20	17	3
-SCDNR Shellfish Management Section	regulatory	regulatory-cautious	0.1221	42	11	31
-Emily Osborne	science-extension	neutral	0.1186	26	22	4
-SCDES Shellfish Sanitation Section	regulatory	regulatory-cautious	0.0913	34	3	31
+South Carolina Sea Grant Consortium (SCSGC)	science-extension	neutral	0.6373	62	31	31
+South Carolina Shellfish Growers Association	advocacy	pro-expansion	0.3581	56	29	27
+SCDNR Shellfish Management Section	regulatory	regulatory-cautious	0.2805	67	19	48
+SCDNR MRRI/Shellfish Research regulatory	regulatory-cautious	0.0835	27	13	14
+SCDES Shellfish Sanitation Section	regulatory	regulatory-cautious	0.0747	43	6	37
+Matt Gorstein	science-extension	neutral	0.0634	20	10	10
+College of Charleston (institutional)	science-extension	neutral	0.0525	12	6	6
+USC Geography Department	science-extension	neutral	0.0063	2	1	1
 Andrew Richard	regulatory	regulatory-cautious	0.0513	4	2	2
 Caitlyn Mayer	industry	pro-expansion	0.0153	8	5	3
-College of Charleston (institutional)	science-extension	neutral	0.0134	6	5	1
-USC Geography Department	science-extension	neutral	0.0063	2	1	1
-Matt Gorstein	science-extension	neutral	0.0061	5	2	3
 Minorities in Aquaculture (MIA)	advocacy	pro-expansion	0.0048	2	1	1
 Clemson University (institutional)	science-extension	neutral	0.0048	5	4	1
 University of South Carolina (institutional)	science-extension	neutral	0.0046	3	2	1
