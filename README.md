@@ -1,98 +1,137 @@
-SC Shellfish Aquaculture Governance Network
-Kate Chatman | MPA/EVSS | College of Charleston / SC Sea Grant Consortium
-May 2026
-About This Network
-This interactive visualization maps the governance network for shellfish aquaculture in South Carolina. It is a component of an MPA/EVSS dual-degree thesis examining why South Carolina — a state with significant biophysical capacity for shellfish mariculture — has substantially less acreage in active production than its ecological potential would support.
+# SC Shellfish Aquaculture Governance Network
 
-The analysis applies two complementary theoretical frameworks:
+**Kate Chatman** · MPA/EVSS Dual-Degree Thesis  
+College of Charleston / SC Sea Grant Consortium · 2026  
+Live dashboard: [chatmanka.github.io/sc-shellfish-network](https://chatmanka.github.io/sc-shellfish-network/)
 
-Advocacy Coalition Framework (ACF) — to identify actor coalitions organized around shared policy beliefs about mariculture expansion
-Herd & Moynihan’s administrative burden framework — to identify which governance relationships generate learning, compliance, and psychological costs for shellfish operators
-Node size reflects betweenness centrality — actors who sit between otherwise disconnected parts of the network and therefore hold disproportionate influence over information and resource flows. Red-orange edges indicate burden-generating relationships. Use the dropdown menus to filter by actor type or search for a specific node.
+---
 
-Full Governance Network
-🌐 Interactive Network — opens in new tab
+## Overview
 
-The full governance network (105 connected nodes, 256 edges) is hosted interactively at the link below. Use the dropdown to filter by actor type, search for a specific node, or hover for centrality details.
+This repository hosts an interactive social network analysis (SNA) of the governance network surrounding shellfish aquaculture (mariculture) in South Carolina. The analysis is a core component of an MPA/EVSS thesis examining why South Carolina — a state with significant biophysical capacity for shellfish mariculture — has substantially less acreage in active production than its ecological potential supports.
 
-This subgraph isolates the 109 burden-generating edges in the network — relationships where one actor’s regulatory authority, compliance requirement, or administrative process imposes learning, compliance, or psychological costs on the receiving actor (Herd & Moynihan, 2019).
+The network maps relationships among 104 actors (regulatory agencies, scientists, industry operators, advocacy organizations, and NGOs) across 275 documented edges (423 directed edges after bidirectional expansion), coded from statutory documents, public records, organizational materials, and interview data collected through January 2026.
 
-Centrality Results
-Top Brokers — Betweenness Centrality
-Betweenness centrality identifies actors whose network position mediates flows between otherwise disconnected actors. High betweenness nodes are structural brokers — their removal would disconnect parts of the governance system.
+---
 
-Actor	Actor Type	Coalition	Betweenness	Degree (All)	Degree (In)	Degree (Out)
-South Carolina Sea Grant Consortium (SCSGC)	science-extension	neutral	0.6373	62	31	31
-South Carolina Shellfish Growers Association	advocacy	pro-expansion	0.3581	56	29	27
-SCDNR Shellfish Management Section	regulatory	regulatory-cautious	0.2805	67	19	48
-SCDNR MRRI/Shellfish Research regulatory	regulatory-cautious	0.0835	27	13	14
-SCDES Shellfish Sanitation Section	regulatory	regulatory-cautious	0.0747	43	6	37
-Matt Gorstein	science-extension	neutral	0.0634	20	10	10
-College of Charleston (institutional)	science-extension	neutral	0.0525	12	6	6
-USC Geography Department	science-extension	neutral	0.0063	2	1	1
-Andrew Richard	regulatory	regulatory-cautious	0.0513	4	2	2
-Caitlyn Mayer	industry	pro-expansion	0.0153	8	5	3
-Minorities in Aquaculture (MIA)	advocacy	pro-expansion	0.0048	2	1	1
-Clemson University (institutional)	science-extension	neutral	0.0048	5	4	1
-University of South Carolina (institutional)	science-extension	neutral	0.0046	3	2	1
-Mike Marshall	regulatory	regulatory-cautious	0.0039	2	1	1
-William Green	industry	pro-expansion	0.0032	5	4	1
-East Coast Shellfish Growers Association (ECSGA)	advocacy	pro-expansion	0.0018	2	1	1
-Thomas (Tom) Bierce	industry	pro-expansion	0.0015	6	5	1
-Andrew Speaker	industry	pro-expansion	0.0008	6	4	2
-Julie Davis	industry	pro-expansion	0.0004	5	4	1
-Trey McMillan	industry	pro-expansion	0.0004	5	4	1
-Jeff Massey	industry	pro-expansion	0.0004	6	4	2
-Most Connected Nodes — Degree Centrality
-Actor	Actor Type	Coalition	Degree (All)	Degree (In)	Degree (Out)	Betweenness
-SCDNR Shellfish Management Section	regulatory	regulatory-cautious	42	11	31	0.1221
-SCDES Shellfish Sanitation Section	regulatory	regulatory-cautious	34	3	31	0.0913
-Emily Osborne	science-extension	neutral	26	22	4	0.1186
-U.S. Army Corps of Engineers Charleston Regulatory Office	regulatory	regulatory-cautious	25	0	25	0.0000
-SCDES Bureau of Coastal Management (OCRM)	regulatory	regulatory-cautious	25	0	25	0.0000
-South Carolina Shellfish Growers Association (SCSGA)	advocacy	pro-expansion	20	17	3	0.1325
-Caitlyn Mayer	industry	pro-expansion	8	5	3	0.0153
-College of Charleston (institutional)	science-extension	neutral	6	5	1	0.0134
-Thomas (Tom) Bierce	industry	pro-expansion	6	5	1	0.0015
-Andrew Speaker	industry	pro-expansion	6	4	2	0.0008
-Jeff Massey	industry	pro-expansion	6	4	2	0.0004
-Larry Toomer	industry	pro-expansion	6	4	2	0.0004
-Matt Gorstein	science-extension	neutral	5	2	3	0.0061
-Clemson University (institutional)	science-extension	neutral	5	4	1	0.0048
-William Green	industry	pro-expansion	5	4	1	0.0032
-Julie Davis	industry	pro-expansion	5	4	1	0.0004
-Trey McMillan	industry	pro-expansion	5	4	1	0.0004
-Bob Baldwin	industry	pro-expansion	5	4	1	0.0004
-Jeff Spahr	industry	pro-expansion	5	4	1	0.0000
-Carrie Spahr	industry	pro-expansion	5	5	0	0.0000
-Coalition Structure
-Coalition	Actor Type	N	Mean Betweenness	Mean Degree
-conservation	advocacy	5	0.0000	0.8
-neutral	science-extension	22	0.0070	3.2
-neutral	industry	2	0.0000	5.0
-neutral	regulatory	1	0.0000	1.0
-pro-expansion	advocacy	9	0.0155	3.3
-pro-expansion	industry	29	0.0008	4.4
-regulatory-cautious	regulatory	26	0.0103	5.5
-Network Summary Statistics
-Metric	Value
-Active nodes	94.0000
-Edges	193.0000
-Network density	0.0221
-Average path length	2.5600
-Diameter	5.0000
-Clustering coefficient (global)	0.1488
-Burden-generating edges	109.0000
-Non-burden edges	84.0000
-Regulatory authority edges	112.0000
-Collaboration edges	38.0000
-Information edges	42.0000
-Methods Note
-This network was constructed using a hybrid observed-plus-survey methodology. Edges were coded from documented relationships using a three-tier evidence hierarchy: Tier 1 (formal authority, statutory mandate, signed agreement), Tier 2 (co-membership, documented joint project, survey self-report), and Tier 3 (documented co-attendance, role-overlap inference). Conflict edges require behavioral evidence from the documentary record per codebook Rule 8. Historical nodes (actors no longer active but instrumental in establishing current regulatory structures, including Peter Kingsley-Smith, departed May 2026) are retained in the node roster but excluded from centrality calculations.
+## Key Findings
 
-Coalition encoding follows the Advocacy Coalition Framework (Sabatier & Jenkins-Smith, 1993): pro-expansion, regulatory-cautious, conservation, and neutral. Administrative burden coding follows Herd & Moynihan (2019): learning, compliance, and psychological burden types assigned by role relationship rather than self-report.
+**Structural broker:** SC Sea Grant Consortium (SCSGC) holds the highest betweenness centrality (0.367), meaning the science-extension node — not any regulatory agency — is the primary cross-sector bridge in SC shellfish governance.
 
-All analysis conducted in R using igraph (Csárdi & Nepusz, 2006) and visNetwork (Almende B.V., 2022). Data current as of May 2026.
+**Administrative burden:** 117 of 275 raw edges are burden-generating per the Herd & Moynihan (2019) framework. The four-agency permitting stack (SCDNR SMS, SCDES SSS, SCDES BCM, USACE) generates the majority of burden-producing relationships, with out/in degree ratios ranging from 2.5 (SCDNR SMS) to 8.3 (USACE).
 
-Chatman, K. (2026). SC Shellfish Aquaculture Governance Network. MPA/EVSS Thesis, College of Charleston / SC Sea Grant Consortium. Beta visualization: rpubs.com/chatmanka
+**Regulatory fragmentation:** Horizontal regulatory density among agencies is only 0.0946, indicating agencies regulate in largely independent silos rather than in coordination — forcing operators to navigate four uncoordinated institutional channels simultaneously.
 
+**Coalition power asymmetry:** The regulatory-cautious coalition (n=26) holds mean hub score 6× higher than the neutral science-extension cluster, despite similar betweenness. The largest coalition (pro-expansion, n=42) has the lowest structural power.
+
+**Conservation is not the binding constraint:** The conservation coalition's mean betweenness (0.0018) and mean degree (2.2) confirm structural peripheral position, providing convergent evidence — alongside Cribbs et al. (2024) — that the binding constraint on SC shellfish expansion is administrative, not ecological or social.
+
+---
+
+## Network Specifications
+
+| Metric | Value |
+|--------|-------|
+| Active nodes | 104 |
+| Raw edges | 275 |
+| Directed edges (bidirectional expanded) | 423 |
+| Network density | 0.040 |
+| Burden-generating edges | 117 |
+| Horizontal regulatory density | 0.0946 |
+| Max betweenness (SCSGC) | 0.367 |
+| Max hub score (SCDNR SMS) | 1.000 |
+| Data current as of | June 2026 |
+
+---
+
+## Theoretical Frameworks
+
+**Advocacy Coalition Framework (ACF)** — Sabatier & Jenkins-Smith (1993). Actors are coded into four coalitions based on documented policy beliefs and behavioral evidence: pro-expansion, regulatory-cautious, conservation, neutral. Coalition membership determines node border color in the visualization.
+
+**Herd & Moynihan Administrative Burden Framework** — Herd & Moynihan (2019). Edges are coded `burden_generating = TRUE` where the relationship imposes learning costs (navigating regulatory complexity), compliance costs (documentation, fees, time), or psychological costs (uncertainty, stigma) on shellfish operators.
+
+**Gould-Fernandez Brokerage Analysis** — Gould & Fernandez (1989). Five role types (Coordinator, Gatekeeper, Representative, Itinerant, Liaison) classify how actors mediate flows between groups. Group membership = actor_type. Computed via `sna::brokerage()`.
+
+---
+
+## Repository Files
+
+| File | Description |
+|------|-------------|
+| `index.html` | Interactive dashboard — main entry point |
+| `network_full.html` | Self-contained visNetwork visualization, full 104-node network |
+| `burden.html` | Self-contained visNetwork visualization, burden subgraph (40 nodes) |
+| `README.md` | This file |
+
+**Data and analysis files** (not in this repo — maintained in thesis working directory):
+
+| File | Description |
+|------|-------------|
+| `edge_list_FINAL_June2026.csv` | 275 edges with relationship_type, direction, strength, evidence_tier, evidence_note, burden_generating |
+| `node_roster_FINAL_June2026.csv` | 104 nodes with actor_type, coalition, governance_level, role, category, node_status |
+| `centrality_results.csv` | Betweenness, hub score, in/out degree for all 104 nodes |
+| `brokerage_results.csv` | Gould-Fernandez role counts for all 104 nodes |
+| `thesis_network_pipeline_June2026.R` | Full R analysis pipeline — loads data, builds graph, runs metrics, renders HTML visualizations |
+| `thesis_static_figures.R` | Generates static PNG/PDF figures for thesis submission |
+
+---
+
+## Methodology Notes
+
+### Edge Construction
+
+Edges are coded using a three-tier evidence hierarchy:
+- **Tier 1:** Formal authority, statutory mandate, signed interagency agreement
+- **Tier 2:** Co-membership, documented joint project, interview self-report
+- **Tier 3:** Documented co-attendance, role-overlap inference, indirect documentation
+
+Burden-generating edges were coded from role relationship and statutory context per Herd & Moynihan (2019). Regulatory authority edges are coded `burden_generating = TRUE` by default. The `burden_generating` flag reflects the structural relationship, not operator-reported experience.
+
+### Boundary Specification
+
+Network boundary follows a reputational-snowball approach seeded from SCDNR's shellfish mariculture permitting documentation and expanded through interview referrals and organizational mapping. Absence of an edge reflects absence of documentation, not confirmed absence of a relationship (Laumann, Marsden & Prensky, 1983).
+
+Former actors (node_status = "historical") are retained per a governance path-dependency argument: regulatory structures shaped by departed actors remain operative in the current system. Former nodes are rendered with reduced opacity in visualizations.
+
+### SCDNR Internal Structure
+
+SCDNR contains two analytically distinct sub-units relevant to mariculture:
+- **Shellfish Management Section (SMS):** Administers culture permits, seed import permits, and harvest area leases. Primary regulatory interface for operators.
+- **MRRI / Shellfish Research (MRRI):** Conducts mariculture science, disease surveillance, and extension at Waddell Mariculture Center. Science-to-management bridge node.
+
+Both are coded as separate nodes with an intra-agency collaboration edge between them.
+
+### R Analysis Stack
+
+```r
+library(igraph)       # Graph construction, centrality, hub scores
+library(sna)          # Gould-Fernandez brokerage analysis
+library(visNetwork)   # Interactive HTML visualization
+library(readr)        # CSV I/O
+library(dplyr)        # Data manipulation
+library(stringr)      # String cleaning
+```
+
+Betweenness centrality: directed, normalized (`igraph::betweenness(g, directed=TRUE, normalized=TRUE)`).  
+Hub score: HITS algorithm (`igraph::hits_scores(g)$hub`), measuring outbound structural influence.  
+Network density: `igraph::edge_density(g)`.
+
+---
+
+## Citation
+
+**Chatman, K. (2026).** *Unlocking South Carolina Mariculture: An Administrative Burden and Social Network Analysis of Shellfish Aquaculture Governance.* MPA/EVSS Thesis, College of Charleston / SC Sea Grant Consortium.
+
+Interactive visualization: [chatmanka.github.io/sc-shellfish-network](https://chatmanka.github.io/sc-shellfish-network/)
+
+---
+
+## Key References
+
+- Gould, R. V., & Fernandez, R. M. (1989). Structures of mediation: A formal approach to brokerage in transaction networks. *Sociological Methodology, 19*, 89–126.
+- Henry, A. D. (2011). Ideology, power, and the structure of policy networks. *Policy Studies Journal, 39*(3), 361–383.
+- Herd, P., & Moynihan, D. P. (2019). *Administrative burden: Policymaking by other means.* Russell Sage Foundation.
+- Knoke, D., & Yang, S. (2008). *Social network analysis* (2nd ed.). SAGE.
+- Laumann, E. O., Marsden, P. V., & Prensky, D. (1983). The boundary specification problem in network analysis. In R. S. Burt & M. J. Minor (Eds.), *Applied network analysis* (pp. 18–34). SAGE.
+- Sabatier, P. A., & Jenkins-Smith, H. C. (Eds.). (1993). *Policy change and learning: An advocacy coalition approach.* Westview Press.
+- Schneider, M., Scholz, J., Lubell, M., Mindruta, D., & Edwardsen, M. (2003). Building consensual institutions: Networks and the National Estuary Program. *American Journal of Political Science, 47*(1), 143–158.
