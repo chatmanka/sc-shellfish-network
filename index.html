@@ -1,0 +1,207 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Who Governs the Oyster? — SC Shellfish Mariculture Governance Network</title>
+<meta name="description" content="An interactive map of the 104 organizations and people who shape shellfish mariculture in South Carolina — who regulates, who funds, who connects, and where the friction is.">
+<style>
+ :root{
+   --industry:#E69F00; --regulatory:#0072B2; --science:#009E73; --advocacy:#CC79A7;
+   --deep:#0b2e4f; --deep2:#0f4c6e; --teal:#12766e;
+   --ink:#22303c; --muted:#5f6b76; --line:#dfe5ea; --page:#f5f8fa; --card:#ffffff;
+ }
+ *{box-sizing:border-box}
+ body{font-family:Georgia,serif;margin:0;color:var(--ink);line-height:1.65;background:var(--page)}
+ .wrap{max-width:1060px;margin:0 auto;padding:0 1.5rem}
+
+ header.hero{background:linear-gradient(135deg,var(--deep) 0%,var(--deep2) 55%,var(--teal) 100%);
+   color:#fff;padding:3.2rem 0 2.4rem;position:relative}
+ header.hero::after{content:"";display:block;position:absolute;left:0;right:0;bottom:0;height:5px;
+   background:linear-gradient(90deg,var(--regulatory) 0 25%,var(--science) 25% 50%,
+   var(--industry) 50% 75%,var(--advocacy) 75% 100%)}
+ .hero h1{font-size:2.2rem;line-height:1.2;margin:0 0 .4rem;letter-spacing:.01em}
+ .hero .tagline{font-size:1.12rem;color:#dce9f2;max-width:46em;margin:.4rem 0 1rem}
+ .hero .byline{color:#a8c4d8;font-size:.95rem}
+
+ .stats{display:flex;gap:1rem;flex-wrap:wrap;margin:1.9rem 0 0}
+ .stat{flex:1 1 150px;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.22);
+   border-radius:8px;padding:.9rem 1rem;backdrop-filter:blur(2px)}
+ .stat b{display:block;font-size:1.7rem;line-height:1.2;color:#fff}
+ .stat span{font-size:.84rem;color:#c9dbe8}
+ .stat:nth-child(1){border-top:3px solid var(--regulatory)}
+ .stat:nth-child(2){border-top:3px solid var(--science)}
+ .stat:nth-child(3){border-top:3px solid var(--industry)}
+ .stat:nth-child(4){border-top:3px solid var(--advocacy)}
+
+ h2{font-size:1.4rem;margin:2.8rem 0 .6rem;padding-bottom:.35rem;position:relative}
+ h2::after{content:"";position:absolute;left:0;bottom:0;width:3.2rem;height:3px;
+   border-radius:2px;background:linear-gradient(90deg,var(--teal),var(--regulatory))}
+ h3{font-size:1.05rem;margin:1.4rem 0 .3rem}
+ p{max-width:46em}
+
+ .frame{position:relative;border:1px solid var(--line);border-radius:10px;overflow:hidden;
+   margin:1.1rem 0 .5rem;background:var(--card);
+   box-shadow:0 2px 14px rgba(11,46,79,.10)}
+ .frame iframe{display:block;width:100%;height:620px;border:0}
+ .frame-hint{font-size:.85rem;color:var(--muted);margin:.3rem 0 1rem}
+
+ .legend{display:flex;gap:.6rem;flex-wrap:wrap;font-size:.86rem;margin:.7rem 0}
+ .legend span{display:inline-flex;align-items:center;gap:.45rem;background:var(--card);
+   border:1px solid var(--line);border-radius:999px;padding:.25rem .8rem}
+ .dot{width:.75rem;height:.75rem;border-radius:50%;display:inline-block}
+
+ .maps{display:flex;gap:.8rem;flex-wrap:wrap;margin:1.1rem 0 1.5rem}
+ .maps a{display:block;padding:.75rem 1.2rem;color:#fff;text-decoration:none;
+   border-radius:6px;font-size:.95rem;box-shadow:0 2px 6px rgba(11,46,79,.18);
+   transition:transform .12s ease,box-shadow .12s ease}
+ .maps a:hover{transform:translateY(-2px);box-shadow:0 4px 10px rgba(11,46,79,.25)}
+ .maps a.m-full{background:var(--regulatory)}
+ .maps a.m-burden{background:#c0392b}
+ .maps a.m-coal{background:#6C3483}
+
+ .findings{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.1rem;
+   margin:1.3rem 0}
+ .finding{background:var(--card);border-radius:8px;padding:1.05rem 1.15rem;font-size:.95rem;
+   box-shadow:0 1px 8px rgba(11,46,79,.08)}
+ .finding h3{margin:.1rem 0 .45rem;font-size:1rem}
+ .finding.f-reg{border-top:4px solid var(--regulatory)}
+ .finding.f-sci{border-top:4px solid var(--science)}
+ .finding.f-adv{border-top:4px solid var(--advocacy)}
+ .finding.f-ind{border-top:4px solid var(--industry)}
+ .finding.f-reg h3{color:var(--regulatory)}
+ .finding.f-sci h3{color:#00795a}
+ .finding.f-adv h3{color:#a44e7f}
+ .finding.f-ind h3{color:#a86f00}
+
+ .methods{background:var(--card);border-left:4px solid var(--teal);border-radius:0 8px 8px 0;
+   padding:1rem 1.3rem;box-shadow:0 1px 8px rgba(11,46,79,.07);max-width:none}
+ .methods p{max-width:none;margin:.3rem 0}
+
+ ul.data-links{padding-left:0;font-size:.95rem;list-style:none;margin:1rem 0}
+ ul.data-links li{margin:.5rem 0;background:var(--card);border:1px solid var(--line);
+   border-radius:6px;padding:.6rem .9rem}
+ ul.data-links li::before{content:"\2192\00a0";color:var(--teal);font-weight:bold}
+ a{color:var(--regulatory)}
+
+ .about{background:var(--card);border-radius:8px;border:1px solid var(--line);
+   border-top:4px solid var(--science);padding:1.1rem 1.3rem;margin:1.2rem 0;
+   font-size:.95rem;box-shadow:0 1px 8px rgba(11,46,79,.07)}
+ .about p{max-width:none}
+
+ footer{margin:3.2rem 0 0;background:var(--deep);color:#a8c4d8;font-size:.85rem;
+   padding:1.5rem 0 2.2rem}
+ footer p{max-width:none;margin:.4rem 0}
+ footer code{color:#cfe3f0}
+
+ @media(max-width:640px){
+   .hero h1{font-size:1.6rem}
+   .frame iframe{height:440px}
+ }
+</style></head><body>
+
+<header class="hero"><div class="wrap">
+  <h1>Who Governs the Oyster?</h1>
+  <p class="tagline">An interactive map of the organizations and people who shape shellfish
+  mariculture in South Carolina — who regulates, who funds, who connects the pieces, and where
+  the process creates friction for growers.</p>
+  <p class="byline">Kate Chatman &middot; MPA/EVSS Dual-Degree Thesis, College of Charleston
+  &middot; S.C. Sea Grant Consortium &middot; 2026</p>
+
+  <div class="stats">
+    <div class="stat"><b>104</b><span>actors in the network</span></div>
+    <div class="stat"><b>275</b><span>documented relationships</span></div>
+    <div class="stat"><b>4</b><span>sectors: industry, regulatory, science, advocacy</span></div>
+    <div class="stat"><b>117</b><span>ties that impose administrative burden</span></div>
+  </div>
+</div></header>
+
+<main class="wrap">
+
+<h2>Explore the network</h2>
+<p>Every dot is an actor; every line is a documented relationship. Drag nodes, scroll to zoom,
+and hover for details on any actor or tie. Thicker lines indicate more frequent mandated
+interaction.</p>
+
+<div class="legend">
+  <span><i class="dot" style="background:var(--industry)"></i> Industry</span>
+  <span><i class="dot" style="background:var(--regulatory)"></i> Regulatory</span>
+  <span><i class="dot" style="background:var(--science)"></i> Science &amp; extension</span>
+  <span><i class="dot" style="background:var(--advocacy)"></i> Advocacy</span>
+</div>
+
+<div class="frame"><iframe src="network_full.html" title="Full governance network — interactive"
+  loading="lazy"></iframe></div>
+<p class="frame-hint">Best on a larger screen. If the map is cramped, open it full-screen below.</p>
+
+<div class="maps">
+  <a class="m-full" href="network_full.html">Full network &#8599;</a>
+  <a class="m-burden" href="network_burden.html">Administrative burden layer &#8599;</a>
+  <a class="m-coal" href="network_coalition.html">Coalition structure &#8599;</a>
+</div>
+
+<h2>What the network shows</h2>
+<div class="findings">
+  <div class="finding f-reg"><h3>One office holds the network together</h3>
+  The SCDNR Shellfish Management Section is the network's leading <em>liaison</em> — it bridges
+  sectors that have no other connection to each other. That makes it indispensable, and it makes
+  the system fragile: capacity lost there disconnects whole parts of the network.</div>
+
+  <div class="finding f-sci"><h3>Sea Grant is the front door to the science</h3>
+  The S.C. Sea Grant Consortium has the highest betweenness centrality in the network and is its
+  leading <em>gatekeeper</em>: access to science and extension resources overwhelmingly runs
+  through it. It is the only actor scoring high across all five brokerage roles.</div>
+
+  <div class="finding f-adv"><h3>The growers' association plays both positions</h3>
+  SCSGA is nearly tied as the top gatekeeper <em>and</em> the second liaison — it both organizes
+  its own sector and bridges disconnected ones. For a volunteer-run trade association, that is an
+  unusually heavy structural load.</div>
+
+  <div class="finding f-ind"><h3>Burden concentrates on growers</h3>
+  117 of 275 relationships impose administrative burden — permits, reporting, inspections,
+  compliance. Coding burden tie-by-tie, rather than actor-by-actor, shows exactly which
+  relationships in the permitting system produce friction, and where added capacity or
+  coordination would relieve it.</div>
+</div>
+
+<h2>How it was built</h2>
+<div class="methods">
+<p>Relationships were coded from statutes and regulations, public records, organizational
+documents, and a 2024 working group survey; every tie carries an evidence tier and a source
+note. Actors are classified by sector and, following the Advocacy Coalition Framework, by policy
+coalition. Administrative burden is coded at the level of the individual relationship using Herd
+and Moynihan's typology. Centrality and brokerage statistics (Gould &amp; Fernandez, 1989) were
+computed in R with igraph and the sna package; results were independently verified in Python.
+The interactive maps are built with visNetwork.</p>
+</div>
+
+<h2>Data &amp; full results</h2>
+<ul class="data-links">
+  <li><a href="stats.html">Full results tables</a> — betweenness centrality and all brokerage
+      roles, top ten actors each</li>
+  <li><a href="centrality_results_v2.csv">centrality_results_v2.csv</a> — degree and betweenness
+      for all 104 actors</li>
+  <li><a href="brokerage_results_v2.csv">brokerage_results_v2.csv</a> — five Gould-Fernandez
+      brokerage counts for all 104 actors</li>
+  <li><a href="https://github.com/chatmanka/sc-shellfish-network">GitHub repository</a> — code
+      and version history</li>
+</ul>
+
+<h2>About the researcher</h2>
+<div class="about">
+  <p><b>Kate Chatman</b> is an MPA/EVSS dual-degree candidate at the College of Charleston,
+  working with the S.C. Sea Grant Consortium. This network analysis is one component of her
+  thesis, <em>Closing the Governance Gap: Shellfish Mariculture in South Carolina</em>, which
+  examines why permitted production lags what the coastline can support — and where targeted
+  investment and coordination could close the gap.</p>
+  <p>Contact: <a href="mailto:chatmankate@gmail.com">chatmankate@gmail.com</a></p>
+</div>
+
+</main>
+
+<footer><div class="wrap">
+<p>Built from <code>node_roster_FINAL_v2_July2026.csv</code> and
+<code>edge_list_FINAL_v2_July2026.csv</code>. Interactive maps regenerate via
+<code>rebuild_network_products.R</code>. Last updated 31 July 2026.</p>
+<p>Correction note: dashboard results prior to 29 July 2026 transposed two brokerage roles
+(Gatekeeper and Itinerant); all values shown here are corrected and independently verified.</p>
+</div></footer>
+
+</body></html>
