@@ -1,0 +1,105 @@
+name,actor_type,coalition,governance_level,node_status,degree_in,degree_out,degree_total,betweenness
+SC Sea Grant Consortium (SCSGC),science-extension,neutral,state,active,31,31,62,0.3673
+South Carolina Shellfish Growers Association (SCSGA),advocacy,pro-expansion,state,active,29,27,56,0.3581
+SCDNR Shellfish Management Section,regulatory,regulatory-cautious,state,active,19,48,67,0.2805
+SCDNR MRRI / Shellfish Research,regulatory,regulatory-cautious,state,active,13,14,27,0.0835
+SCDES Shellfish Sanitation Section,regulatory,regulatory-cautious,state,active,6,37,43,0.0747
+Matt Gorstein,science-extension,neutral,state,active,10,10,20,0.0634
+College of Charleston (institutional),science-extension,neutral,state,active,6,6,12,0.0525
+South Carolina Aquarium,advocacy,pro-expansion,local,active,4,4,8,0.0377
+Trey McMillan,industry,pro-expansion,private,active,8,1,9,0.0376
+Caitlyn Mayer,industry,pro-expansion,state,active,8,4,12,0.0233
+Susan Lovelace,science-extension,neutral,state,historical,8,8,16,0.0214
+Clemson University (institutional),science-extension,neutral,state,active,5,5,10,0.0184
+SCDNR Marine Permitting Office (Indigenous Molluscan Importation),regulatory,regulatory-cautious,state,active,2,3,5,0.018
+Andy Hollis,regulatory,regulatory-cautious,state,active,2,2,4,0.0179
+Bill Cox,industry,pro-expansion,private,active,2,2,4,0.0168
+SCDES Bureau of Coastal Management,regulatory,regulatory-cautious,state,active,4,28,32,0.0114
+Jeff Massey,industry,pro-expansion,private,active,7,3,10,0.0112
+Larry Toomer,industry,pro-expansion,private,active,7,2,9,0.0112
+U.S. Army Corps of Engineers Charleston Regulatory Office,regulatory,regulatory-cautious,federal,active,3,25,28,0.0108
+Peter Kingsley-Smith,regulatory,regulatory-cautious,state,historical,8,8,16,0.0108
+SCDNR Wholesale Shellfish Endorsement,regulatory,regulatory-cautious,state,active,2,2,4,0.0095
+The Nature Conservancy SC Program,advocacy,conservation,private,active,3,2,5,0.0094
+Andrew Richard,regulatory,regulatory-cautious,federal,active,4,5,9,0.0088
+Erin Levesque,regulatory,regulatory-cautious,state,active,5,5,10,0.0087
+Louden Porter,advocacy,pro-expansion,local,active,2,2,4,0.0077
+Steve Richards,science-extension,neutral,state,active,4,4,8,0.0057
+Thomas (Tom) Bierce,industry,pro-expansion,private,active,6,2,8,0.0045
+Minorities in Aquaculture (MIA),advocacy,pro-expansion,private,active,2,2,4,0.0039
+SC Department of Agriculture (SCDA),regulatory,regulatory-cautious,state,active,3,4,7,0.0039
+Tanya Darden,regulatory,regulatory-cautious,state,active,6,6,12,0.0034
+Lauren Faulk,regulatory,regulatory-cautious,state,active,7,7,14,0.0032
+Gary Sundin,regulatory,regulatory-cautious,state,active,6,6,12,0.003
+Mike Marshall,regulatory,regulatory-cautious,state,active,4,4,8,0.0028
+SC Farm Bureau,advocacy,regulatory-cautious,state,active,3,3,6,0.0023
+Sarah Pedigo,science-extension,neutral,state,historical,5,5,10,0.0022
+Craig Reeves,industry,pro-expansion,private,active,4,2,6,0.0012
+Mikayla Milford,science-extension,neutral,state,active,2,2,4,0.0012
+East Coast Shellfish Growers Association (ECSGA),advocacy,pro-expansion,federal,active,2,2,4,0.0011
+Dr. Joseph Von Nessen,science-extension,neutral,state,active,2,3,5,9e-4
+Imani Black,advocacy,pro-expansion,local,active,3,3,6,9e-4
+SC Department of Commerce,regulatory,neutral,state,active,2,3,5,7e-4
+William Green,industry,pro-expansion,private,active,4,1,5,7e-4
+Andrew Speaker,industry,pro-expansion,private,active,5,1,6,5e-4
+Bob Baldwin,industry,pro-expansion,private,active,5,1,6,5e-4
+Julie Davis,industry,pro-expansion,private,active,5,1,6,5e-4
+Tracy Smart,regulatory,regulatory-cautious,state,active,3,3,6,2e-4
+Graham Gaines,science-extension,neutral,state,historical,2,2,4,2e-4
+NOAA Fisheries (NMFS SE Region),regulatory,neutral,federal,active,2,3,5,1e-4
+University of South Carolina (institutional),science-extension,neutral,state,active,3,3,6,1e-4
+Aaron Watson,regulatory,regulatory-cautious,state,active,3,3,6,0
+Allan Strand,science-extension,neutral,state,active,1,1,2,0
+Andrew Carmines,industry,pro-expansion,private,active,5,1,6,0
+Andrew Harter,industry,neutral,private,active,5,1,6,0
+Austin Harter,industry,neutral,private,active,5,1,6,0
+Ben Dyar,regulatory,regulatory-cautious,state,active,2,2,4,0
+Brad Blake,advocacy,pro-expansion,private,active,1,1,2,0
+Carrie Spahr,industry,pro-expansion,private,active,5,1,6,0
+Charles Santerre,science-extension,neutral,state,active,2,2,4,0
+Clinton Moran,science-extension,neutral,state,active,1,1,2,0
+Coastal Carolina University,science-extension,neutral,state,active,1,1,2,0
+Coastal Conservation Association SC Chapter,advocacy,conservation,private,active,1,1,2,0
+Coastal Conservation League,advocacy,conservation,local,active,2,2,4,0
+Crosby family,industry,pro-expansion,private,active,3,1,4,0
+Cyrus Buffum,industry,pro-expansion,private,active,4,0,4,0
+Dave Belanger ('Clammer Dave'),industry,pro-expansion,state,active,3,1,4,0
+Dave Gaw,regulatory,regulatory-cautious,state,active,1,1,2,0
+Deja Knight,advocacy,pro-expansion,private,active,1,1,2,0
+Donald Kent,science-extension,neutral,federal,active,1,1,2,0
+Doug Rogers (Rodgers),industry,pro-expansion,private,active,5,1,6,0
+Dr. Andrew Tweel,regulatory,regulatory-cautious,state,active,3,3,6,0
+Dr. Boze Hancock,advocacy,conservation,private,active,1,1,2,0
+Dr. Jason Broach,regulatory,regulatory-cautious,state,active,3,3,6,0
+Dr. River Bryant,regulatory,regulatory-cautious,state,active,3,3,6,0
+Ed Atkins,industry,pro-expansion,private,active,3,1,4,0
+Emily Osborne,science-extension,neutral,state,active,1,1,2,0
+Erik Sotka,science-extension,neutral,state,active,1,1,2,0
+Frank Roberts,industry,pro-expansion,private,active,6,0,6,0
+Henry DaVega,regulatory,regulatory-cautious,state,active,1,1,2,0
+Jason Doll,science-extension,neutral,state,active,1,1,2,0
+Jeff Beasley,industry,pro-expansion,private,active,3,1,4,0
+Jeff Spahr,industry,pro-expansion,private,active,5,1,6,0
+Josh Eboch,industry,pro-expansion,private,active,5,1,6,0
+Josh Kim,science-extension,neutral,state,active,1,1,2,0
+Keith Belli,science-extension,neutral,state,active,2,2,4,0
+Kendra Tidwell,industry,pro-expansion,private,active,5,1,6,0
+Kim Livingston,industry,pro-expansion,private,active,5,1,6,0
+Lowcountry Oyster Trail,advocacy,pro-expansion,local,active,1,1,2,0
+Mara Duke Blatt,advocacy,pro-expansion,local,active,1,1,2,0
+Marzieh Motallebi,science-extension,neutral,state,active,1,1,2,0
+Meghan Balling,regulatory,neutral,federal,active,1,1,2,0
+Meredith Wrye,industry,pro-expansion,private,active,5,1,6,0
+Mike Kalista,industry,pro-expansion,private,active,5,1,6,0
+Paul Wirth,industry,pro-expansion,private,active,4,0,4,0
+Robert (Bob) Podolsky,science-extension,neutral,state,active,2,2,4,0
+Sara McDonald,advocacy,conservation,local,active,1,1,2,0
+SCDNR Commercial License Office,regulatory,regulatory-cautious,state,active,0,1,1,0
+Social Carrying Capacity Research Team (UGA/SCDNR),science-extension,neutral,state,active,0,1,1,0
+Terrea Schramm,industry,pro-expansion,private,active,3,1,4,0
+Tina Toomer,industry,pro-expansion,private,active,5,1,6,0
+Tracy Ross,regulatory,regulatory-cautious,state,active,1,1,2,0
+Tye Pettay,science-extension,neutral,state,active,1,1,2,0
+U.S. Fish and Wildlife Service (USFWS),regulatory,regulatory-cautious,federal,active,0,1,1,0
+USC Geography Department,science-extension,neutral,state,active,2,2,4,0
+Nancy Hadley,regulatory,regulatory-cautious,state,historical,1,1,2,0
