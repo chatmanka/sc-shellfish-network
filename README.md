@@ -93,7 +93,9 @@ Network boundary follows a reputational-snowball approach seeded from SCDNR's sh
 
 Former actors (node_status = "historical") are retained per a governance path-dependency argument: regulatory structures shaped by departed actors remain operative in the current system. Former nodes are rendered with reduced opacity in visualizations.
 
-**Brokerage roles.** Applying the Gould & Fernandez (1989) typology, SC Sea Grant Consortium
+### Brokerage roles
+
+Applying the Gould & Fernandez (1989) typology, SC Sea Grant Consortium
 is the only actor scoring high across all five brokerage forms. SCDES Shellfish Sanitation
 (74%) and the USACE Charleston office (98%) act almost entirely as Representatives, speaking
 outward from the regulatory sector rather than controlling entry to it. SCDNR MRRI is 71%
